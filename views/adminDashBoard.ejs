@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    .resultsDisplay {
+      padding: 10%;
+      margin: auto;
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 70px;
+    }
+
+    .result {
+      border: solid black;
+      padding-top: 20px;
+
+
+      width: 30%;
+      margin: auto;
+      margin-top: 10%;
+      margin-bottom: 20%;
+
+    }
+
+    .votes {
+
+      margin: auto;
+      margin-top: 10vw;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    table{
+      font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+    }
+    td,th{
+      border: 1px solid #ddd;
+  padding: 8px;
+
+    }
+   
+  th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+  </style>
+</head>
+
+<body>
+  <div>
+    <header style="background-color:darkgrey;" class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <svg xmlns="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">
+            <h3>मतदान</h3>
+          </span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+
+          <a href="/logout" class="mr-5 hover:text-gray-900">logout</a>
+
+        </nav>
+
+      </div>
+    </header>
+  </div>
+  <div class="result">
+    <p class="resultsDisplay">
+      results are shown here!
+    <table>
+      <thead>
+        <tr>
+          <th>Name
+           
+          </th>
+          
+            <td>
+              BJP
+           </td> 
+           <td>
+           congress
+         </td> 
+         <td>
+       SS
+        </td> 
+        <td>
+         no one        </td> 
+             
+               
+         
+
+        </tr>
+        <tr>
+          <th>
+            Number of votes
+          </th>
+         
+            <% for(var i=0; i < votesCount.length; i++) { %>
+             <td><%=  votesCount[i] %>
+            </td> 
+              
+                <% } %>
+          
+        </tr>
+      </thead>
+      
+
+
+
+    </table>
+    </p>
+
+
+
+
+
+
+
+
+  </div>
+  <script>
+
+  </script>
+
+</body>
+
+</html>
